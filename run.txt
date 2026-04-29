@@ -1,0 +1,4 @@
+gcc main.c game.c -o jogo -DNCURSES_STATIC -I/msys64/ucrt64/include/ncursesw -L/msys64/ucrt64/lib -lncursesw
+
+.\jogo.exe
+

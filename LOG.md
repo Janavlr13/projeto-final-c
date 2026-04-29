@@ -18,4 +18,25 @@ Próximo passo planeado:
  - Começar a pensar no código e o que quero incluir no projecto, se quero variantes ou faço só o sudoku normal.
 
 Linhas de código escritas (estimativa):
-Hoje: 0
+ - 0
+
+
+==========================================================================
+Sessão 2 – 29/04/2026
+==========================================================================
+Funcionalidades implementadas:
+ - Tentativa de implementação da biblioteca ncurses para a interface visual.
+
+Maior dificuldade:
+ - Erros de linker (undefined reference to '__imp_initscr'; undefined reference to `__imp_endwin') ao compilar no windows.
+
+Como resolvi (ou não resolvi):
+ - Usar um subdirectório: #include <ncurses\ncurses.h>
+ - Usar o comando: gcc main.c game.c -o jogo -DNCURSES_STATIC -I/msys64/ucrt64/include/ncursesw -L/msys64/ucrt64/lib -lncursesw
+
+Próximo passo planeado:
+ - Escrever código da versão mais básica do sudoku.
+ - Tentar usar as funcionalidades do ncurses para verificar o seu funcionamento.
+
+Linhas de código escritas (estimativa):
+ - aprox. 15
