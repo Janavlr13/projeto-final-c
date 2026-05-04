@@ -2,3 +2,10 @@ gcc main.c game.c -o jogo -DNCURSES_STATIC -I/msys64/ucrt64/include/ncursesw -L/
 
 .\jogo.exe
 
+---- COMMIT NO GITHUB ----
+
+git add .
+
+git commit -m "[Sessão X]     "
+
+git push
