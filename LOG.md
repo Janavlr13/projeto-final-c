@@ -68,3 +68,28 @@ Próximo passo planeado:
 
 Linhas de código escritas (estimativa):
  - aprox. 50
+
+
+ Sessão 4 – 06/05/2026
+==========================================================================
+Funcionalidades implementadas:
+ - Criação de typedef struct - aliases para as configurações de Celulas, Janelas, e Jogo;
+ - Edição do game.h - adicionei as aliases e os protótipos das funções existentes no game.c;
+ - Em game.c:
+   - Criação de funções para a utilização e configuração do ncurses;
+   - Criação de funções para mostrar janelas auxiliares básicas para o jogo - relógio, botões e numeros concluídos;
+   - Criação de uma janela tabuleiro;
+ - Em todas as funções utilizei funcionalidades do ncurses.
+
+Maior dificuldade:
+ - Utilizar funcionalidades do ncurses.
+
+Como resolvi (ou não resolvi):
+ - Com a prática torna-se mais fácil mudar a forma de raciocinio para a inclusão do ncurses.
+
+Próximo passo planeado:
+ - Continuar a configurar o jogo;
+ - Criar o código de raciocínio do jogo do sudoku.
+
+Linhas de código escritas (estimativa):
+ - aproxi. 250
