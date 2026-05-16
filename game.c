@@ -61,6 +61,8 @@ void iniciar_NCURSES() {
 }
 
 
+
+
 // ------ CRIACAO E TAMANHO DAS JANELAS ------
 void criar_janelas(JanelasJogo *wins) {
 
