@@ -93,3 +93,51 @@ Próximo passo planeado:
 
 Linhas de código escritas (estimativa):
  - aproxi. 250
+
+  Sessão 5 – 12/05/2026
+==========================================================================
+Funcionalidades implementadas:
+ - Criação do código principal do jogo -> lógica para o sudoku
+
+Maior dificuldade:
+ - nenhuma
+
+Como resolvi (ou não resolvi):
+ - ...
+
+Próximo passo planeado:
+ - Continuar a focar-me no jogo em si e não no ncurses e interface
+
+Linhas de código escritas (estimativa):
+ - aproxi. 100
+
+
+   Sessão 6 e 7 – 14/05/2026 e 15/05/2026
+==========================================================================
+Funcionalidades implementadas:
+ - Criação do código principal do jogo concluído;
+ - Criação do menu e main() no main.c;
+ - Concluídas as funções do jogo, incluindo a vitória;
+ - Modificação e organização do game.h.
+ - Modificações nas características da interface:
+  - Centrar janelas e conteúdo;
+  - Mdificar cores;
+  - Incluir Titulo e mensagem de vitória com ASCII Art;
+  - Incluir comandos das setas do teclado para escolher celulas;
+  - Modificar/Criar o temporizador;
+  - Modidicar a Janela botões para apenas mostrar o nível de dificuldade;
+  - Criação do rodapé;
+  - Criação do ficheiro compilador.bat para não ter de estar sempre a usar o terminal;
+  - Tratamento de erros.
+
+Maior dificuldade:
+ - Tratamento de erros;
+
+Como resolvi (ou não resolvi):
+ - Não resolvi: não consegui que os cliques do rato sejam reconhecidos.
+
+Próximo passo planeado:
+ - Criar, num ficheiro à parte, só a parte do tabuleiro e dos cliques para ter a certeza se o problema é do sistema/programas ou se tem a ver com o código. não deve ter as coordenadas principais certas, mas com 4 janelas diferentes, deve haver alguma interferência para que nem sejam impressas as coordenadas quando tento fazer o debug.
+
+Linhas de código escritas (estimativa):
+ - aproxi. 500

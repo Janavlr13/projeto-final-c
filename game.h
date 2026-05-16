@@ -29,27 +29,34 @@ typedef struct {
     Celula tabuleiro[SIZE][SIZE];       // Tamanho das celulas do tabuleiro
     int select_x, select_y;             // Celula seleccionada
     bool running;                       // Jogo a correr (True) ou parado (False)
+    time_t tempo_inicial;               // Tempo de inicio
+    int dificuldade;                    // Dificuldade
 } StatusJogo;
 
 
+// =============================================================================
+//                          PROTOTIPOS DAS FUNCOES
+// =============================================================================
 
-// ----- PROTOTIPOS DAS FUNCOES -----
+// ------ FUNCOES NCURSES ------
 void iniciar_NCURSES();
-void setup_colors();
 void criar_janelas(JanelasJogo *wins);
 void terminar_NCURSES();
 
-void mostrar_timer(JanelasJogo *wins);
-void mostrar_botoes(JanelasJogo *wins);
-void contar_num(Celula tabuleiro[SIZE][SIZE], int contar[10]);
-void lista_num(JanelasJogo *wins, int contar[10]);
-void mostrar_nums_concl(JanelasJogo *wins, Celula tabuleiro[SIZE][SIZE]);
+// ------ FUNCOES LOGICA + JOGO ------
+void novoJogo(Celula tabuleiro[SIZE][SIZE], int dificuldade);
+int verificarJogada(int tabuleiro[SIZE][SIZE], int linha, int coluna, int value);
+int ler_cliques(JanelasJogo *wins, int mouse_x, int mouse_y, int *sel_x, int *sel_y);
+void jogar_numero(StatusJogo *state, int num);
+bool verificar_vitoria(Celula tabuleiro[SIZE][SIZE]);
 
-
-void iniciar_Tabuleiro(Celula tabuleiro[SIZE][SIZE]);
+// ------ FUNCOES INTERFACE ------
 void desenhar_Tabuleiro(JanelasJogo *wins, StatusJogo *state);
-
-
-
+void mostrar_timer(JanelasJogo *wins, StatusJogo *state);
+void mostrar_botoes(JanelasJogo *wins, int dificuldade);
+void mostrar_nums_concl(JanelasJogo *wins, Celula tabuleiro[SIZE][SIZE]);
+void instrucoes_rodape();
+void localizar_mouse(StatusJogo *state, JanelasJogo *wins, int teclas);
+void mostrar_vitoria(JanelasJogo *wins, StatusJogo *state);
 
 #endif
